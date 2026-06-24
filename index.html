@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>حاجی آباد ممتاز عسلی | آذین سنگ</title>
+<title>آذین سنگ | حاجی آباد ممتاز عسلی</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 
 <body>
 
 
 <header>
 
-<div class="brand">
-آذین سنگ
-</div>
+<h1>آذین سنگ</h1>
 
-<p>
-کاتالوگ دیجیتال سنگ
-</p>
+<p>کاتالوگ اختصاصی محصول</p>
 
 </header>
 
 
 
-<section class="hero">
+
+<main>
 
 
-<img src="stone.jpg">
+<section class="product-card">
 
 
-<div class="heroBox">
+<div class="product-image">
 
-<h1>
+<img src="stone.jpg" onclick="showImage(this.src)">
+
+</div>
+
+
+
+<div class="product-info">
+
+<h2>
 سنگ تراورتن حاجی آباد ممتاز عسلی
-</h1>
+</h2>
 
 
 <p>
-سنگ طبیعی با کیفیت ممتاز برای نمای ساختمان‌های لوکس
+سنگ طبیعی با رنگ گرم عسلی و کیفیت ممتاز مناسب نمای ساختمان
 </p>
 
 
@@ -56,78 +61,68 @@
 
 
 
-
-<section class="container">
-
-
-<h2>
-مشخصات محصول
-</h2>
+<section class="details">
 
 
+<h2>مشخصات فنی</h2>
 
-<div class="infoGrid">
+
+<div class="table">
 
 
 <div>
-عنوان
-<strong>تراورتن</strong>
+<span>نوع سنگ</span>
+<b>تراورتن</b>
 </div>
 
 
 <div>
-رنگ
-<strong>عسلی</strong>
+<span>رنگ</span>
+<b>عسلی</b>
 </div>
 
 
 <div>
-معدن
-<strong>حاجی آباد</strong>
+<span>معدن</span>
+<b>حاجی آباد</b>
 </div>
 
 
 <div>
-استخراج
-<strong>اصفهان</strong>
+<span>محل استخراج</span>
+<b>اصفهان</b>
 </div>
 
 
 <div>
-ضخامت
-<strong>۱.۸ سانتی متر</strong>
+<span>ضخامت</span>
+<b>۱.۸ سانتی متر</b>
 </div>
 
 
 <div>
-ابعاد
-<strong>عرض ۴۰، طول آزاد</strong>
+<span>ابعاد</span>
+<b>عرض ۴۰، طول آزاد</b>
 </div>
 
 
 <div>
-فرآوری
-<strong>صیقلی</strong>
+<span>فرآوری</span>
+<b>صیقلی</b>
 </div>
 
 
 <div>
-کیفیت
-<strong>ممتاز</strong>
+<span>کاربرد</span>
+<b>نمای ساختمان</b>
 </div>
-
-
-<div>
-کاربرد
-<strong>نمای ساختمان</strong>
-</div>
-
 
 
 </div>
 
 
 </section>
+
 
 
 
@@ -137,14 +132,12 @@
 <section class="price">
 
 
-<h2>
-قیمت روز
-</h2>
+<h3>قیمت روز</h3>
 
 
-<h1>
+<strong>
 ۱,۴۰۰,۰۰۰ تومان
-</h1>
+</strong>
 
 
 <p>
@@ -152,9 +145,9 @@
 </p>
 
 
-<span>
+<small>
 آخرین بروزرسانی: ۱۴۰۵/۴/۳
-</span>
+</small>
 
 
 </section>
@@ -164,7 +157,8 @@
 
 
 
-<section class="container">
+
+<section class="gallery">
 
 
 <h2>
@@ -172,16 +166,16 @@
 </h2>
 
 
-<div class="gallery">
+<div class="photos">
 
 
-<img onclick="openImage(this.src)" src="project1.jpg">
+<img src="project1.jpg" onclick="showImage(this.src)">
 
 
-<img onclick="openImage(this.src)" src="project2.jpg">
+<img src="project2.jpg" onclick="showImage(this.src)">
 
 
-<img onclick="openImage(this.src)" src="project3.jpg">
+<img src="project3.jpg" onclick="showImage(this.src)">
 
 
 </div>
@@ -193,18 +187,10 @@
 
 
 
-<div id="viewer" onclick="closeImage()">
-
-<img id="bigImage">
-
-</div>
 
 
 
-
-
-
-<section class="about container">
+<section class="about">
 
 
 <h2>
@@ -213,10 +199,8 @@
 
 
 <p>
-
-تراورتن حاجی آباد ممتاز عسلی با رنگ گرم،
-طرح طبیعی و کیفیت بالا انتخابی مناسب برای نمای ساختمان‌های مدرن می‌باشد.
-
+تراورتن حاجی آباد ممتاز عسلی با سطح صیقلی،
+رنگ طبیعی و مقاومت بالا گزینه‌ای مناسب برای نمای ساختمان‌های لوکس است.
 </p>
 
 
@@ -224,41 +208,40 @@
 
 
 
+</main>
 
 
 
-<section class="contact">
 
 
-<h2>
-آذین سنگ
-</h2>
+
+<div id="popup" onclick="hideImage()">
+
+<img id="popupImg">
+
+</div>
 
 
-<p>
-جهت سفارش و استعلام تماس بگیرید
-</p>
 
 
-<a href="tel:09129374866">
-تماس با فروش
+
+
+<a class="call" href="tel:09129374866">
+تماس با آذین سنگ
 </a>
-
-
-</section>
-
 
 
 
 <footer>
 
-آذین سنگ | تراورتن حاجی آباد ممتاز عسلی
+آذین سنگ | 09129374866
 
 </footer>
 
 
 
 <script src="script.js"></script>
+
 
 </body>
 </html>
