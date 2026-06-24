@@ -1,14 +1,14 @@
-function openImage(src){
+function showImage(src){
 
-document.getElementById("viewer").style.display="flex";
+document.getElementById("popup").style.display="flex";
 
-document.getElementById("bigImage").src=src;
+document.getElementById("popupImg").src=src;
 
 }
 
 
-function closeImage(){
+function hideImage(){
 
-document.getElementById("viewer").style.display="none";
+document.getElementById("popup").style.display="none";
 
 }
