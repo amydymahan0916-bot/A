@@ -1,14 +1,14 @@
-function showImage(src){
+function zoom(src){
 
-document.getElementById("popup").style.display="flex";
+document.getElementById("viewer").style.display="flex";
 
-document.getElementById("popupImg").src=src;
+document.getElementById("big").src=src;
 
 }
 
 
-function hideImage(){
+function closeZoom(){
 
-document.getElementById("popup").style.display="none";
+document.getElementById("viewer").style.display="none";
 
 }
