@@ -1,32 +1,45 @@
 *{
+
 box-sizing:border-box;
 font-family:tahoma;
+
 }
+
 
 
 body{
 
 margin:0;
-background:#f4f0e8;
+
+background:#f3eee5;
+
 color:#333;
+
 text-align:center;
 
 }
 
 
+
 header{
 
-background:#3b3025;
+background:#30251c;
+
 color:white;
+
 padding:30px;
 
 }
 
 
+
 header h1{
 
-font-size:35px;
-color:#e7bd72;
+color:#d8ad63;
+
+font-size:38px;
+
+margin:0;
 
 }
 
@@ -39,10 +52,13 @@ padding:25px;
 }
 
 
+
 .hero img{
 
 width:90%;
-max-width:600px;
+
+max-width:650px;
+
 border-radius:20px;
 
 box-shadow:0 10px 30px #999;
@@ -50,28 +66,38 @@ box-shadow:0 10px 30px #999;
 }
 
 
+
 .hero h2{
 
-font-size:28px;
+font-size:30px;
 
 }
 
 
 
-.box,
+
+
+.card,
 .price,
+.gallery,
 .about,
 .contact{
 
+
 background:white;
 
-margin:20px;
+margin:25px auto;
 
 padding:25px;
+
+width:90%;
+
+max-width:900px;
 
 border-radius:20px;
 
 box-shadow:0 5px 20px #ddd;
+
 
 }
 
@@ -79,57 +105,106 @@ box-shadow:0 5px 20px #ddd;
 
 .info p{
 
+padding:12px;
+
 border-bottom:1px solid #ddd;
 
-padding:10px;
-
 }
+
+
 
 
 
 .price{
 
-background:#33291f;
+background:#35291e;
+
 color:white;
 
 }
 
 
+
 .price h1{
 
-color:#e7bd72;
-font-size:35px;
+color:#e5bd70;
+
+font-size:40px;
 
 }
+
+
+
+
+
+.gallery .photos{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+.photos img{
+
+
+width:280px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+
+}
+
+
 
 
 
 .contact a{
 
+
 display:inline-block;
 
-background:#b88a42;
+background:#b98943;
 
 color:white;
 
-padding:15px 35px;
+padding:15px 40px;
 
 border-radius:30px;
 
 text-decoration:none;
 
-margin:10px;
+font-size:18px;
+
 
 }
 
 
 
+
+
 footer{
+
 
 background:#222;
 
 color:white;
 
 padding:20px;
+
+margin-top:30px;
+
 
 }
