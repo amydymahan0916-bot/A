@@ -1,15 +1,14 @@
-window.addEventListener("scroll",()=>{
+function openImage(src){
 
-let header=document.querySelector("header");
+document.getElementById("viewer").style.display="flex";
 
-if(window.scrollY>50){
-
-header.style.background="#000";
-
-}else{
-
-header.style.background="#16120e";
+document.getElementById("bigImage").src=src;
 
 }
 
-});
+
+function closeImage(){
+
+document.getElementById("viewer").style.display="none";
+
+}
