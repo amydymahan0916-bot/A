@@ -2,23 +2,28 @@
 <html lang="fa" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>سنگ تراورتن حاجی آباد ممتاز عسلی | آذین سنگ</title>
+<title>حاجی آباد ممتاز عسلی | آذین سنگ</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-
 
 <body>
 
 
 <header>
 
-<h1>آذین سنگ</h1>
-<p>کاتالوگ دیجیتال سنگ ساختمانی</p>
+<div class="brand">
+آذین سنگ
+</div>
+
+<p>
+کاتالوگ دیجیتال سنگ
+</p>
 
 </header>
 
@@ -26,93 +31,103 @@
 
 <section class="hero">
 
-<img src="stone.jpg" alt="سنگ تراورتن حاجی آباد">
 
-<div>
+<img src="stone.jpg">
 
-<h2>
+
+<div class="heroBox">
+
+<h1>
 سنگ تراورتن حاجی آباد ممتاز عسلی
-</h2>
+</h1>
+
 
 <p>
-سنگی لوکس با رنگ طبیعی عسلی، مناسب برای نماهای خاص ساختمان
+سنگ طبیعی با کیفیت ممتاز برای نمای ساختمان‌های لوکس
 </p>
 
-</div>
-
-</section>
-
-
-
-
-
-<section class="box">
-
-<h2>مشخصات محصول</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-<span>نوع سنگ</span>
-<b>تراورتن</b>
-</div>
-
-
-<div class="card">
-<span>رنگ</span>
-<b>عسلی</b>
-</div>
-
-
-<div class="card">
-<span>معدن</span>
-<b>حاجی آباد</b>
-</div>
-
-
-<div class="card">
-<span>محل استخراج</span>
-<b>اصفهان</b>
-</div>
-
-
-<div class="card">
-<span>ضخامت</span>
-<b>۱.۸ سانتی متر</b>
-</div>
-
-
-<div class="card">
-<span>ابعاد</span>
-<b>عرض ۴۰، طول آزاد</b>
-</div>
-
-
-<div class="card">
-<span>فرآوری</span>
-<b>صیقلی</b>
-</div>
-
-
-<div class="card">
-<span>کیفیت</span>
-<b>ممتاز</b>
-</div>
-
-
-<div class="card">
-<span>کاربرد</span>
-<b>نمای ساختمان</b>
-</div>
-
 
 </div>
 
 
 </section>
 
+
+
+
+
+
+<section class="container">
+
+
+<h2>
+مشخصات محصول
+</h2>
+
+
+
+<div class="infoGrid">
+
+
+<div>
+عنوان
+<strong>تراورتن</strong>
+</div>
+
+
+<div>
+رنگ
+<strong>عسلی</strong>
+</div>
+
+
+<div>
+معدن
+<strong>حاجی آباد</strong>
+</div>
+
+
+<div>
+استخراج
+<strong>اصفهان</strong>
+</div>
+
+
+<div>
+ضخامت
+<strong>۱.۸ سانتی متر</strong>
+</div>
+
+
+<div>
+ابعاد
+<strong>عرض ۴۰، طول آزاد</strong>
+</div>
+
+
+<div>
+فرآوری
+<strong>صیقلی</strong>
+</div>
+
+
+<div>
+کیفیت
+<strong>ممتاز</strong>
+</div>
+
+
+<div>
+کاربرد
+<strong>نمای ساختمان</strong>
+</div>
+
+
+
+</div>
+
+
+</section>
 
 
 
@@ -122,20 +137,24 @@
 <section class="price">
 
 
-<h2>قیمت روز</h2>
+<h2>
+قیمت روز
+</h2>
+
 
 <h1>
 ۱,۴۰۰,۰۰۰ تومان
 </h1>
+
 
 <p>
 هر متر مربع
 </p>
 
 
-<small>
-آخرین بروزرسانی قیمت: ۱۴۰۵/۴/۳
-</small>
+<span>
+آخرین بروزرسانی: ۱۴۰۵/۴/۳
+</span>
 
 
 </section>
@@ -145,27 +164,27 @@
 
 
 
-<section class="box">
+<section class="container">
 
 
 <h2>
-نمونه اجرای ساختمان
+نمونه اجرا
 </h2>
-
 
 
 <div class="gallery">
 
 
-<img src="project1.jpg">
+<img onclick="openImage(this.src)" src="project1.jpg">
 
-<img src="project2.jpg">
 
-<img src="project3.jpg">
+<img onclick="openImage(this.src)" src="project2.jpg">
+
+
+<img onclick="openImage(this.src)" src="project3.jpg">
 
 
 </div>
-
 
 
 </section>
@@ -174,8 +193,18 @@
 
 
 
+<div id="viewer" onclick="closeImage()">
 
-<section class="box">
+<img id="bigImage">
+
+</div>
+
+
+
+
+
+
+<section class="about container">
 
 
 <h2>
@@ -185,9 +214,8 @@
 
 <p>
 
-تراورتن حاجی آباد ممتاز عسلی با رنگ گرم و طرح طبیعی،
-یکی از انتخاب‌های مناسب برای اجرای نمای ساختمان‌های لوکس و مدرن است.
-این سنگ با کیفیت بالا و فرآوری صیقلی عرضه می‌شود.
+تراورتن حاجی آباد ممتاز عسلی با رنگ گرم،
+طرح طبیعی و کیفیت بالا انتخابی مناسب برای نمای ساختمان‌های مدرن می‌باشد.
 
 </p>
 
@@ -208,23 +236,16 @@
 
 
 <p>
-برای سفارش و دریافت اطلاعات بیشتر تماس بگیرید
+جهت سفارش و استعلام تماس بگیرید
 </p>
 
 
 <a href="tel:09129374866">
-تماس مستقیم
+تماس با فروش
 </a>
 
 
-<h3>
-09129374866
-</h3>
-
-
 </section>
-
-
 
 
 
@@ -236,6 +257,8 @@
 </footer>
 
 
-</body>
 
+<script src="script.js"></script>
+
+</body>
 </html>
